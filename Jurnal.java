@@ -5,6 +5,7 @@ public class Jurnal {
 
     
     public static void main(String[] args) {
+        long temp;
         Scanner sc = new Scanner (System.in);
         System.out.print ("masukkan jumlah bilangan finobacci ");
         int n=sc.nextInt ();
@@ -17,8 +18,9 @@ public class Jurnal {
         }
         
          for (int i=0; i<n; i++){
-             System.out.print(fib[i] + " ");
+            temp = fib[i] + temp;
          }
+         System.out.print(fib[i] + " ");
     
     }
     
